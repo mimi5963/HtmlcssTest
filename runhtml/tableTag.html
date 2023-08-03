@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Tag</title>
+  <style>
+    table {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      padding: 12px;
+    }
+
+    .col1 {
+      width: 80px;
+    }
+
+    .col2 {
+      background-color: yellow;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>테이블 기본</h1>
+  <table> <!--border 속성은 웹표준 x 스타일 필수-->
+    <caption>프로필 테이블</caption>
+    <tr>
+      <th>취미</th>
+      <th>특기</th>
+      <th>이름</th>
+    </tr>
+    <tr>
+      <td>놀기</td>
+      <td>똥싸기</td>
+      <td>김망공</td>
+    </tr>
+
+    <tr>
+      <td>모르지</td>
+      <td>헬스</td>
+      <td>짐코딩</td>
+    </tr>
+  </table>
+  <hr>
+  <!-- tr은 행 td,th는 각각 열 일반열, 제목열 
+      td와 th태그는 반드시 tr태그안에 있어야함 
+      caption은 table 설명용도
+  -->
+  <h1>테이블 그룹</h1>
+  <table>
+    <caption>학급점수</caption>
+    <colgroup>
+      <col width="10px" /> <!--콜 그룹을 사용하면, 열단위 조작 가능
+                                width도 웹표준 x-->
+      <col class="col1" />
+      <col class="col2" />
+      <col class="col3" />
+      <col class="col4" />
+      <col class="col5" />
+    </colgroup>
+    <thead> <!-- head,body footer는 그냥 테이블 나누는 것-->
+      <tr>
+        <th>반</th>
+        <th>이름</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+        <th>코딩</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">1반</td>
+        <td>길동이</td>
+        <td>100</td>
+        <td>20</td>
+        <td>20</td>
+        <td>20</td>
+      </tr>
+      <tr>
+
+        <td>호동이</td>
+        <td>10</td>
+        <td>30</td>
+        <td>40</td>
+        <td>50</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">평균</td>
+        <td>nan</td>
+        <td>nan</td>
+        <td>nan</td>
+        <td>nan</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
