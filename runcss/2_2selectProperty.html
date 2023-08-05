@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selecter</title>
+  <style>
+    /* 속성이 존재하면 스타일*/
+    h2[class] {
+      font-size: 30px;
+    }
+
+    a[target] {
+      color: red;
+    }
+
+    /*속성값 일치*/
+    h2[class="navertitle"] {
+      color: green;
+    }
+
+    /*속성값 포함하는 요소*/
+    a[href*="www"] {
+      text-decoration: none;
+    }
+
+    /*속성값으로 시작*/
+    h2[class^="google"] {
+      color: blue;
+    }
+
+    /*속성값으로 끝남*/
+    a[href$="book.com"] {
+      color: violet;
+    }
+
+    /*속성에 단어가 포함하는 요소 */
+    h2[class~="zzz"] {
+      border: 10px solid goldenrod;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="navertitle">네이버</h2>
+  <a href="http://www.naver.com">네이버</a>
+
+  <h2 class="googletitle">구글</h2>
+  <a href="http://www.google.com" target="_blank">구글</a>
+
+  <h2 class="facebooktitle">페북</h2>
+  <a href="http://www.facebook.com">페북</a>
+  <h2>짐</h2>
+  <h2 class="text title zzz">감사 </h2>
+</body>
+
+</html>

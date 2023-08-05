@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>font</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+    html {
+      font-family: 'Nanum Gothic', sans-serif;
+      /* font-family: serif, monospace; */
+      /*서체 ,콤마로 나열 브라우저가 지원하는 가장 첫번째 서체 적용*/
+      font-size: 10px;
+    }
+
+    .title {
+      color: hsl(33, 74%, 46%);
+    }
+
+    .font-italic {
+      font-style: italic;
+    }
+
+    .rem {
+      font-size: 2rem;
+    }
+
+    .em {
+      font-size: 3em;
+    }
+
+    .rem2 {
+      font-size: 100px;
+    }
+
+    input[type="text"][id="text1"] {
+      width: 10vw;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 class="title"> 아야야야</h2>
+  <p class="content"> 컨텐츠 </p>
+  <p class="content font-italic"> 컨텐츠 중 최고야 </p>
+  <p class="content "> 컨텐츠 중 최고야 </p>
+  <p class="content"> 컨텐츠 중 최고야 </p>
+  <p class="content"> 컨텐츠 중 최고야 </p>
+</body>
+<hr>
+<h2>픽셀</h2>
+<p>컨텐츠 중 최고야</p>
+<h2>rem</h2>
+<div class="rem2">
+  <p class="rem">최상위 태그(html등)의 몇배로 할것인가?</p>
+</div>
+<h2>em</h2>
+<p class="em">최상위 요소 말고, 현재 자기자신의 태그에 몇배?
+  <span class="em"> 옴마마</span> <!--이미 p태그에 em으로 이 태그에는 3em인데 거기에 다시 3배-->
+  <!--보통 부모태그의 폰트사이즈 상속받음 거기에다가 몇배냐임-->
+</p>
+<hr>
+<h2>vw</h2>
+<div></div>
+<h2>vh</h2>
+<div></div>
+<hr>
+<input type="text" id="text1" name="t" placeholder="뭐" />
+
+</html>

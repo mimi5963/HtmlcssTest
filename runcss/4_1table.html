@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블</title>
+  <style>
+    #movie {
+      border-collapse: collapse;
+      /*표테두리*/
+      width: 1000px;
+    }
+
+    #movie th,
+    #movie td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    #movie th {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      text-align: left;
+      background-color: green;
+      color: wheat;
+    }
+
+    #movie tr:hover {
+      background-color: gray;
+      /*마우스 위로 올라갔을때 -> 이벤트*/
+    }
+
+    #movie tr:nth-child(even) {
+      background-color: gray;
+      /*nth tr의 형제들(nth-child) even은 짝수만*/
+    }
+  </style>
+</head>
+
+<body>
+  <table id="movie">
+    <thead>
+
+      <tr>
+        <th>영화</th>
+        <th>상영시간</th>
+        <th>개봉</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>모모</td>
+        <td>100분</td>
+        <td>아직</td>
+      </tr>
+      <tr>
+        <td>아아</td>
+        <td>120분</td>
+        <td>조금있다</td>
+      </tr>
+      <tr>
+        <td>아샤</td>
+        <td>10분</td>
+        <td>하는중</td>
+      </tr>
+      <tr>
+        <td>오오</td>
+        <td>이거</td>
+        <td>모지</td>
+      </tr>
+      <tr>
+        <td>키키</td>
+        <td>너무</td>
+        <td>귀찮</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+
+    </tfoot>
+
+
+  </table>
+</body>
+
+</html>

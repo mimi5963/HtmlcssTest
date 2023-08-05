@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border</title>
+  <style>
+    .border {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      /*원래 따로 지정하는거 한번에 하는것*/
+      /* border-top: 10px dotted red;
+      border-bottom: 5px dashed blue; */
+    }
+
+    .radius {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+
+    .border-box {
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      padding: 20px;
+      margin: 10px;
+      box-sizing: border-box;
+      /*border와 padding content를 합쳐서 width와 heigh에 맞춤
+        아마 content크기가 자동조절될 듯 border랑 padding은 우리가 지정하니까
+        width랑 height만 지정해주면 알아서 맞춰줘서 크기 계산이 쉽다.
+        */
+    }
+
+    .content-box {
+      margin: 10px;
+      width: 100px;
+      height: 100px;
+      border: 1px solid red;
+      padding: 20px;
+      box-sizing: content-box;
+      /*기본 content크기에 padding이랑 border값 합친것 만큼 박스크기 설정*/
+    }
+  </style>
+</head>
+
+<body>
+  <div class="border"></div>
+  <div class="radius"></div>
+  <div class="border-box">야이야이이</div>
+  <div class="content-box"></div>
+</body>
+
+</html>
